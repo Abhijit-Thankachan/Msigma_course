@@ -1,0 +1,68 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .top_bar {
+    text-align: center;
+    padding-block: 5%;
+  }
+   
+  .top_bar h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: #1b75bb;
+  }
+   
+  .courseSection {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+   
+  .courseSection div {
+    width: 25%;
+    text-align: center;
+    padding-block: 0;
+    display: block;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin:  20px;
+    padding-inline: 5%;
+  }
+   
+  .courseSection div h2 {
+    font-weight: bold;
+    color: rgb(27, 117, 187);
+  }
+   
+  .courseSection div p {
+    font-size: small;
+    padding-block: 3%;
+    color: #000000;
+    
+  }
+   
+  .courseSection div button {
+    color: rgb(27, 117, 187);
+    border: 1px solid rgb(27, 117, 187);
+    background-color: rgba(27, 117, 187, 0.05);
+    padding: 4% 8%;
+    border-radius: 25px;
+  }
+   
+.subtext{
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
