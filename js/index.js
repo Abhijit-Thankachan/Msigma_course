@@ -25,13 +25,26 @@ async function getData() {
             pricing.textContent = "Fee starting at ₹799 per subject";
             pricing.classList.add('subtext')
 
+            const randomColor = getRandomColor();
+            title.style.color = randomColor;
+            button.style.color = randomColor;
+            button.style.borderColor = randomColor;
+            button.style.backgroundColor = `rgba(${randomColor}, 0.05)`;
+
             courseContainer.append(title, description, button, pricing);
             courseSection.appendChild(courseContainer);
         });
     } catch (error) {
         console.error(error);
     }
+    
 }
-
+function getRandomColor() {
+    // Generate random values for RGB components
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${green}, ${blue})`;
+}
 
 getData();
